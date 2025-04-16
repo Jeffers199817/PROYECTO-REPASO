@@ -10,4 +10,7 @@ package sistemaGestionDeParquesDeDiversiones;
  */
 public interface MaterialReservable {
     
+   void reservarBoleto(int cantidad) throws ParqueException;
+   void cancelarReserva(int cantidad) throws ParqueException;
+    
 }

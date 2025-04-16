@@ -10,4 +10,8 @@ package sistemaGestionDeParquesDeDiversiones;
  */
 class ParqueException extends Exception {
     
+    public ParqueException(String mensaje){ 
+        super(mensaje);
+    }
+    
 }

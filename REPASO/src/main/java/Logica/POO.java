@@ -27,7 +27,7 @@ public class POO {
         alumno.saberAprobado(9);
         
         System.out.println("Mis datos completos son.");
-        System.out.println(alumno);
+        System.out.println(alumno); 
     }
     
    
