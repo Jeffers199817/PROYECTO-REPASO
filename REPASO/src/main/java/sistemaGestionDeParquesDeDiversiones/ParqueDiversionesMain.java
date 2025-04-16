@@ -13,14 +13,14 @@ public class ParqueDiversionesMain {
     public static void main(String[] args) {
         try {
             // Crear atracciones
-            Atraccion[] atracciones = new Atraccion[] {
+            Atraccion[] atracciones = {
                 new MontanaRusa("Tornado", 50, 25.0, 5, 3),
                 new Carrusel("Carrusel Mágico", 30, 10.0, 3, 20),
                 new CasaTerror("Mansión Embrujada", 20, 15.0, 10, 5)
             };
 
             // Crear visitantes
-            Visitante[] visitantes = new Visitante[] {
+            Visitante[] visitantes ={
                 new Adulto("Ana", "A001", 100.0),
                 new Adulto("Carlos", "A002", 50.0),
                 new Nino("Lucía", "N001", 30.0, 1.2)
@@ -41,7 +41,9 @@ public class ParqueDiversionesMain {
             }
             if (atracciones[2] instanceof MaterialReservable) {
                 ((MaterialReservable) atracciones[2]).reservarBoleto(5);
-                System.out.println("Reservados 5 boletos para " + atracciones[2].getNombre());
+                
+                System.out.println("Reservados 5 boletos para el " + atracciones[2].getNombre());
+                
             }
 
             // Procesar accesos
